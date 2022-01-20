@@ -19,11 +19,11 @@ function trans_Tex() {
     var text = `${outputsize}` + `${outputcolor}`   + `${inputValue}` +" } ";
     // MAKE TEX
     var html =  katex.renderToString(
-        `${text}`, {throwOnError: false}
+        `${text}`, {throwOnError: false}, { displayMode: true }
     );
 
 
-    document.getElementById( "check" ).innerHTML = 'OUTPUT：　'    +html;
+    document.getElementById( "check" ).innerHTML =    html;
 }
 
 
@@ -49,3 +49,5 @@ function convert_colorcode_to_rgb(colorcode) {
     var b = parseInt(colorcode.substring(4, 6), 16);
     return [r, g, b];
 }
+
+

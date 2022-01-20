@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <link rel="stylesheet" href="forms.css">
+    
     <meta charset="UTF-8">
 
 <!-- katexの部分 -->
@@ -12,18 +12,20 @@
     <!-- To automatically render math in text elements, include the auto-render extension: -->
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
-<!-- katex終わり -->
+<!-- katex canvas -->
 
-<!-- 配列宣言 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css" integrity="sha384-wE+lCONuEo/QSfLb4AfrSk7HjWJtc4Xc1OiB2/aDBzHzjnlBP4SX7vjErTcwlA8C" crossorigin="anonymous">
+<script>src="katex.min.js"</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js" integrity="sha384-tdtuPw3yx/rnUGmnLNWXtfjb9fpmwexsd+lr6HUYnUY4B7JhB5Ty7a1mYd+kto/s" crossorigin="anonymous"></script> -->
 
 
+
+<link rel="stylesheet" href="forms.css">
 <script src="define.js"></script>
 
 
 </head>
 
-
-<br>
 
     <form>
         <label for="size">Size</label>
@@ -45,9 +47,10 @@
         <div id="check"></div>
     </div>
     
-
     
-    <script src="scripts.js"></script>
+
+
+        <script src="scripts.js"></script>
 </body>
 
 
